@@ -49,7 +49,7 @@ class HistoryConsole(code.InteractiveConsole, object):
         self.init_history(histfile)
 
     def init_history(self, histfile):
-        import readline
+        import gnureadline as readline
 #        readline.parse_and_bind("tab: complete")
         if hasattr(readline, "read_history_file"):
             try:
